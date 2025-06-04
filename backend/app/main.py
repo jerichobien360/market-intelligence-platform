@@ -1,21 +1,36 @@
-# app/main.py
-from fastapi import FastAPI, BackgroundTasks
+from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
-import redis
-from .routers import scraping, analytics, reports
-from .services.scheduler import start_background_tasks
+from app.config import settings
+from app.database import engine, Base
+from app.routers import companies, products
+
+# Create database tables
+Base.metadata.create_all(bind=engine)
 
 app = FastAPI(
-    title="Market Intelligence Platform",
-    description="Automated business intelligence and competitor monitoring",
-    version="1.0.0"
+    title=settings.PROJECT_NAME,
+    description="Automated business intelligence and competitor monitoring platform",
+    version="1.0.0",
+    debug=settings.DEBUG
 )
 
-app.add_middleware(CORSMiddleware, allow_origins=["*"])
-app.include_router(scraping.router, prefix="/api/v1/scraping")
-app.include_router(analytics.router, prefix="/api/v1/analytics")
-app.include_router(reports.router, prefix="/api/v1/reports")
+# CORS middleware
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # Configure this properly for production
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
-@app.on_event("startup")
-async def startup_event():
-    start_background_tasks()
+# Include routers
+app.include_router(companies.router, prefix=f"{settings.API_V1_STR}/companies", tags=["companies"])
+app.include_router(products.router, prefix=f"{settings.API_V1_STR}/products", tags=["products"])
+
+@app.get("/")
+async def root():
+    return {"message": f"Welcome to {settings.PROJECT_NAME}"}
+
+@app.get("/health")
+async def health_check():
+    return {"status": "healthy", "version": "1.0.0"}
