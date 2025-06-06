@@ -1,4 +1,4 @@
-# 🚀 Market Intelligence Platform
+# 🚀 Market Intelligence Platform (WIP)
 
 > **Automated Business Intelligence & Competitor Monitoring System**
 
