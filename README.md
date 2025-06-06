@@ -1,8 +1,10 @@
-# 🚀 Market Intelligence Platform (WIP)
+# 🚀 Market Intelligence Platform
 
 > **Automated Business Intelligence & Competitor Monitoring System**
 
 A comprehensive FastAPI-based platform that automatically collects, analyzes, and presents market data to help businesses make informed decisions. Built with modern Python technologies and designed for scalability.
+
+*Note: This is still in work-in-progress (WIP)*
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)
