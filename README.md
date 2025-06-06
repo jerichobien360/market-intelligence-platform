@@ -4,6 +4,8 @@
 
 A comprehensive FastAPI-based platform that automatically collects, analyzes, and presents market data to help businesses make informed decisions. Built with modern Python technologies and designed for scalability.
 
+*Note: This is still in work-in-progress (WIP)*
+
 ![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.104+-green.svg)
 ![Redis](https://img.shields.io/badge/Redis-7.0+-red.svg)
@@ -570,8 +572,8 @@ We welcome contributions! Please see our [Contributing Guide](./CONTRIBUTING.md)
 
 ### 👨‍💻 **Developer**
 - **Name**: Jericho
-- **Email**: your-email@example.com
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
+- **Email**: jerichobien360@example.com
+- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/jericho-bien-5b751a321/)
 - **Portfolio**: [Your Portfolio Website](https://yourportfolio.com)
 
 ### 🆘 **Support**
