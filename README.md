@@ -572,8 +572,8 @@ We welcome contributions! Please see our [Contributing Guide](./CONTRIBUTING.md)
 
 ### 👨‍💻 **Developer**
 - **Name**: Jericho
-- **Email**: your-email@example.com
-- **LinkedIn**: [Your LinkedIn Profile](https://linkedin.com/in/yourprofile)
+- **Email**: jerichobien360@example.com
+- **LinkedIn**: [Your LinkedIn Profile](https://www.linkedin.com/in/jericho-bien-5b751a321/)
 - **Portfolio**: [Your Portfolio Website](https://yourportfolio.com)
 
 ### 🆘 **Support**
