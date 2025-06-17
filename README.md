@@ -133,7 +133,7 @@ market_intelligence_platform/
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/yourusername/market-intelligence-platform.git
+git clone https://github.com/jerichobien360/market-intelligence-platform.git
 cd market-intelligence-platform
 ```
 
